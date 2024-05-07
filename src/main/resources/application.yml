@@ -1,0 +1,15 @@
+spring:
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        password: 'null'
+        url: jdbc:mysql://localhost:3306/accommodate?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+        username: root
+    springdoc:
+        packagesToScan: com.excel
+        pathsToMatch: /*
+        swagger-ui:
+            path: /sss
+    mvc:
+        pathmatch:
+            matching-strategy: ant_path_matcher
+
